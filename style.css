@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+
 * {
     margin: 0;
     padding: 0;
@@ -183,7 +186,10 @@ nav {
     padding: 12px;
     margin: 2px;
     
-    
+}
+.explore-btn a{
+    color: white;
+    font-weight: bold;
 }
 
 .explore-btn:hover {
@@ -215,17 +221,31 @@ nav {
     display: flex !important;
     justify-content: space-evenly!important ;
 
-
+}
+.categry{
+display: flex;
+flex-direction: column;
+padding-top: 44px;
+padding-bottom: 0px;
+height: auto !important;
 }
 .boxes{
-    border: 2px solid rgb(24, 204, 244);
+    border: 4px solid rgb(24, 204, 244);
     border-radius: 33px !important;
     transform: translateX(-8px);
     padding: 44px;
     margin: 44px;
     text-align: center;
-
+    background-color: #fff;
+  
 }
+.boxes:hover{
+    /* box-shadow: 100px 10px 8px 10px #0fbaee; */
+    box-shadow: 100px 10px 20px 7px #06b7f7;
+  
+  
+}
+
 .courses h5{
     margin: 4px 0px 0px 0px;
     padding-top: 3rem;
@@ -256,8 +276,16 @@ nav {
     width: 100vw;
     height: 100vh;
     display: inline-block;
+    /* padding-top: 20px !important; */
 
 }
+
+.course{
+    padding-top: 44px;
+    margin: 11px;
+
+}
+
 .heading {
     text-align: center;
     margin-bottom: 3rem;
@@ -290,7 +318,9 @@ main {
     display:flex;
     flex-direction: row;
     justify-content:center;
-
+    /* min-height: 410px; */
+    margin: 8px;
+    
 }
 
 .cards-container {
@@ -303,18 +333,23 @@ main {
 .card {
     width: 360px;
     min-height: 400px;
-    box-shadow: 0 0 4px #d4ecff;
+    box-shadow: 0 0 22px #000000;
     border-radius: 4px;
     cursor: pointer;
     background-color: #fff;
     overflow: hidden;
     transition: all 0.3s ease;
+    margin: 18px;
 }
 
 .card:hover {
     box-shadow: 1px 1px 8px #d4ecff;
     background-color: #f9fdff;
     transform: translateY(8px);
+    border: 3px solid black;
+    border-radius: 22px;
+    margin: 2px;
+    padding: 8px;
 }
 
 .card-header img {
@@ -331,24 +366,212 @@ main {
     margin-block: 12px;
 }
 
-.footer{
-    height: 100vhpx;
-    padding: 8px;
+
+/* footer  / about us */
+
+
+
+
+.footer-distributed{
     padding-top: 22px;
     margin-top: 250px;
-background-color: #e01212;
-display: flex;
-flex-direction: column;
+    height: auto;
+  background: #000000;
+  color: white;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0);
+  box-sizing: border-box;
+  width: 100vw;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+
 }
-.f1{
-    display: flex;
-    justify-content: center;
-    margin: 4px;
-    padding: 11px;
-    
-    
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
 }
-.f11 .f12 .f13{
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+  width: 40%;
+}
+
+/* The company logo */
+
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  margin: 0;
+}
+
+.footer-distributed h3 span{
+  color:  lightseagreen;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  font-weight:400;
+  text-decoration: none;
+  color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+  color:  #fa0b0b;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+  width: 35%;
+}
+
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+  content: "|";
+  font-weight:300;
+  font-size: 20px;
+  left: 0;
+  color: #fff;
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+  width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+    margin: auto;
+}
+
+.footer-distributed .footer-icons a{
+      margin: auto;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+
+
+@media (max-width: 850px) {
+.courses{
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
-    flex-direction: column;
+   
+}
+
+  .footer-distributed{
+    font: bold 14px sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 100px;
+    display: none;
+   
+
+    
+   
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right{
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i{
+    margin-left: 0;
+  }
+
 }
